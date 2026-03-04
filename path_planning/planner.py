@@ -42,7 +42,7 @@ class Planner:
             self.step()
             if self.is_done.is_set(): break
         else:
-            pass # TODO: timeout
+            pass # timeout
         path, visited_nodes = self.postloop()
         return path, visited_nodes
 
